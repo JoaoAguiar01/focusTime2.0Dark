@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    justify-content: space-around;
+    justify-items: end;
+    transition: 0.300ms;
+    background: rgba(255, 255, 255, 1);
+    color:rgba(50, 50, 56, 1);
+    transition: 0.3s;
+    
+}
+header{
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+main{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 19.2rem;
+    justify-content: center;
+}
+#time{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    display: grid;
+   
+
+}
+.timer{
+    display: flex;
+    align-items: flex-end;
+    height: 91%;
+
+}
+.controls{
+    display: flex;
+    gap: 40px;
+    height: 48px;
+    align-items: flex-end
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#sounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    align-items: center;
+    align-content: center;
+}
+ .hide{
+    display: none;
+ }
+input[type="checkbox"] {
+    display: none ;
+}
+svg{
+    cursor: pointer;
+}
+#sun{
+    display: block;
+    height: 4.0rem;
+}
+#moon{
+    display: none;
+    
+}
+
+/*Dark-Theme*/
+
+.dark,.dark header,.dark button path{
+    background:  rgba(18, 18, 20, 1);
+    color:rgba(255, 255, 255, 1);
+    fill: #C4C4CC;
+}
+.dark #sun{
+    display:none;
+}
+.dark #moon{
+    display: block;
+}
